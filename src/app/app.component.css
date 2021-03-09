@@ -1,0 +1,51 @@
+.pageWrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #8d8d8d;
+}
+
+.timerWrapper {
+  width: 400px;
+  padding: 25px;
+  border-radius: 20px;
+  border: solid 4px black;
+  background-color: #ffaf9e;
+  cursor: default;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 30%;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  background-color: #c88686;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid #000000;
+  background-color: #c47e7e;
+}
+
+.stop {
+  background-color: #dd3737;
+}
+.stop:hover {
+  background-color: #c13030;
+}
