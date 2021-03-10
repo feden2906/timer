@@ -48,10 +48,15 @@ export class AppComponent {
     this.min = 0;
     this.sec = 0;
     clearInterval(this.timer);
+    this.flag = false;
   }
 
   start(): void {
+    if (this.flag){
+      return;
+    }
     this.setIntervalFunction();
+    this.flag = !this.flag;
   }
 
   stop(): void {
@@ -59,7 +64,10 @@ export class AppComponent {
   }
 
   wait(): void {
-    clearInterval(this.timer);
+    if (this.flag){
+      clearInterval(this.timer);
+      this.flag = !this.flag;
+    }
   }
 
 }
